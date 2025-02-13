@@ -1,0 +1,28 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+header.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+section.content {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer.footer {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
