@@ -1,116 +1,124 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 header.header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header h1 {
-  width: 100%;
-  font-style: italic;
-  color: red;
+    width: 100%;
+    font-style: italic;
+    color: red;
 }
-nav{
- width: 100%;
+
+nav {
+    width: 100%;
 }
-ul{
-   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-li{
-  padding: 0 3%;
-  list-style-type: none;
-  width: 33%;
+
+li {
+    padding: 0 3%;
+    list-style-type: none;
 }
-li a{
-  text-decoration: none;
-  color:black;
-  text-transform: uppercase;
+
+li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
-figure{position: relative;
-top: 0;
-left: 0;
-  width: 100%;
-height: 420px;
-overflow: hidden;
+
+figure {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
-figure img{
-  width: 100%;
-  max-height: 320px;
-  object-fit: cover;
+
+figure img {
+    max-width: 600px;
+    max-height: 400px;
 }
-figcaption{
-padding:  20px 0 40px 0 ;
+
+figcaption {
+    padding: 20px 0 40px 0;
 }
-main.main {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-}
-article {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 70%;
-  padding: 5% 0;
-}
+
 section {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-#home h2{
-  text-transform: uppercase;
-  color:blue;
+
+#home h2 {
+    text-transform: uppercase;
+    color: blue;
 }
-details{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 5% 0;
+
+details {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5% 0;
 }
-summary{
-  font-style: italic;
-  color:green;
+
+summary {
+    font-style: italic;
+    color: green;
 }
-p.poragraf{
-  color:red;
+
+p.poragraf {
+    color: red;
 }
+
+aside {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+aside h3 {
+    text-transform: uppercase;
+    font-style: italic;
+    color: chocolate;
+}
+
 table {
-  width: 100%;
-}
-aside{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: auto;
-  padding: 5% 0;
-  background-color: #f1f1f1;
-}
-aside h3{
-  text-transform: uppercase;
-  font-style: italic;
-  color:chocolate;
+    width: 100%;
 }
 
 footer.footer {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Additional styles for new HTML5 tags */
+time {
+    font-style: italic;
+    color: blue;
+}
+
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
 }
