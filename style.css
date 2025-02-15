@@ -24,11 +24,13 @@ nav{
 ul{
    display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 li{
   padding: 0 3%;
   list-style-type: none;
+  width: 33%;
 }
 li a{
   text-decoration: none;
@@ -39,15 +41,30 @@ figure{position: relative;
 top: 0;
 left: 0;
   width: 100%;
-height: 600px;
+height: 420px;
 overflow: hidden;
 }
 figure img{
-  max-width: 600px;
-  max-height: 400px;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
 }
 figcaption{
 padding:  20px 0 40px 0 ;
+}
+main.main {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+article {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70%;
+  padding: 5% 0;
 }
 section {
   position: relative;
@@ -73,21 +90,24 @@ summary{
 p.poragraf{
   color:red;
 }
+table {
+  width: 100%;
+}
 aside{
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 30%;
   height: auto;
+  padding: 5% 0;
+  background-color: #f1f1f1;
 }
 aside h3{
   text-transform: uppercase;
   font-style: italic;
   color:chocolate;
 }
-table{
-  width: 100%;
-}
+
 footer.footer {
   position: relative;
   top: 0;
