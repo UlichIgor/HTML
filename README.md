@@ -4,41 +4,41 @@
 
 ### Основні теги
 
-* `<span style="color:blue;">&lt;!--...--&gt;</span>` *Визначає коментар*.
-* `<span style="color:blue;">&lt;!DOCTYPE&gt;</span>` *Визначає тип документа*.
-* `<span style="color:blue;">&lt;html&gt;&lt;/html&gt;</span>` *Визначає корінь документа **HTML***.
-* `<span style="color:blue;">&lt;head&gt;&lt;/head&gt;</span>` *Містить метадані/інформацію для документа*.
-* `<span style="color:blue;">&lt;body&gt;&lt;/body&gt;</span>` *Визначає тіло документа*.
+* `<code>&lt;!--...--&gt;</code>` *Визначає коментар*.
+* `<code>&lt;!DOCTYPE&gt;</code>` *Визначає тип документа*.
+* `<code>&lt;html&gt;&lt;/html&gt;</code>` *Визначає корінь документа **HTML***.
+* `<code>&lt;head&gt;&lt;/head&gt;</code>` *Містить метадані/інформацію для документа*.
+* `<code>&lt;body&gt;&lt;/body&gt;</code>` *Визначає тіло документа*.
 
 ### Текстові теги
 
-* `<span style="color:blue;">&lt;a&gt;&lt;/a&gt;</span>` *Визначає гіперпосилання*.
-* `<span style="color:blue;">&lt;abbr&gt;&lt;/abbr&gt;</span>` *Визначає абревіатуру або акронім*.
-* `<span style="color:blue;">&lt;address&gt;&lt;/address&gt;</span>` *Визначає контактну інформацію для автора/власника документа*.
-* `<span style="color:blue;">&lt;b&gt;&lt;/b&gt;</span>` *Визначає жирний текст*.
-* `<span style="color:blue;">&lt;bdi&gt;&lt;/bdi&gt;</span>` *Відокремлює частину тексту, яка може бути відформатована в іншому напрямку, від іншого тексту поза ним*.
-* `<span style="color:blue;">&lt;bdo&gt;&lt;/bdo&gt;</span>` *Перевизначає поточний напрямок тексту*.
-* `<span style="color:blue;">&lt;blockquote&gt;&lt;/blockquote&gt;</span>` *Визначає розділ, цитований з іншого джерела*.
-* `<span style="color:blue;">&lt;cite&gt;&lt;/cite&gt;</span>` *Визначає назву твору*.
-* `<span style="color:blue;">&lt;code&gt;&lt;/code&gt;</span>` *Визначає частину комп'ютерного коду*.
-* `<span style="color:blue;">&lt;del&gt;&lt;/del&gt;</span>` *Визначає текст, який було видалено з документа*.
-* `<span style="color:blue;">&lt;dfn&gt;&lt;/dfn&gt;</span>` *Визначає термін, який буде визначено у вмісті*.
-* `<span style="color:blue;">&lt;em&gt;&lt;/em&gt;</span>` *Визначає виділений текст*.
-* `<span style="color:blue;">&lt;i&gt;&lt;/i&gt;</span>` *Визначає частину тексту іншим голосом або настроєм (курсив)*.
-* `<span style="color:blue;">&lt;ins&gt;&lt;/ins&gt;</span>` *Визначає текст, який було вставлено в документ*.
-* `<span style="color:blue;">&lt;kbd&gt;&lt;/kbd&gt;</span>` *Визначає введення з клавіатури*.
-* `<span style="color:blue;">&lt;mark&gt;&lt;/mark&gt;</span>` *Визначає позначений/виділений текст*.
-* `<span style="color:blue;">&lt;pre&gt;&lt;/pre&gt;</span>` *Визначає попередньо відформатований текст*.
-* `<span style="color:blue;">&lt;q&gt;&lt;/q&gt;</span>` *Визначає коротку цитату*.
-* `<span style="color:blue;">&lt;s&gt;&lt;/s&gt;</span>` *Визначає текст, який більше не є правильним*.
-* `<span style="color:blue;">&lt;samp&gt;&lt;/samp&gt;</span>` *Визначає зразок виведення з комп’ютерної програми*.
-* `<span style="color:blue;">&lt;small&gt;&lt;/small&gt;</span>` *Визначає менший текст*.
-* `<span style="color:blue;">&lt;span&gt;&lt;/span&gt;</span>` *Визначає розділ у документі*.
-* `<span style="color:blue;">&lt;strong&gt;&lt;/strong&gt;</span>` *Визначає важливий текст*.
-* `<span style="color:blue;">&lt;sub&gt;&lt;/sub&gt;</span>` *Визначає підрядковий текст*.
-* `<span style="color:blue;">&lt;sup&gt;&lt;/sup&gt;</span>` *Визначає надрядковий текст*.
-* `<span style="color:blue;">&lt;u&gt;&lt;/u&gt;</span>` *Визначає підкреслений текст*.
-* `<span style="color:blue;">&lt;var&gt;&lt;/var&gt;</span>` *Визначає змінну*.
+* `<code>&lt;a&gt;&lt;/a&gt;</code>` *Визначає гіперпосилання*.
+* `<code>&lt;abbr&gt;&lt;/abbr&gt;</code>` *Визначає абревіатуру або акронім*.
+* `<code>&lt;address&gt;&lt;/address&gt;</code>` *Визначає контактну інформацію для автора/власника документа*.
+* `<code>&lt;b&gt;&lt;/b&gt;</code>` *Визначає жирний текст*.
+* `<code>&lt;bdi&gt;&lt;/bdi&gt;</code>` *Відокремлює частину тексту, яка може бути відформатована в іншому напрямку, від іншого тексту поза ним*.
+* `<code>&lt;bdo&gt;&lt;/bdo&gt;</code>` *Перевизначає поточний напрямок тексту*.
+* `<code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>` *Визначає розділ, цитований з іншого джерела*.
+* `<code>&lt;cite&gt;&lt;/cite&gt;</code>` *Визначає назву твору*.
+* `<code>&lt;code&gt;&lt;/code&gt;</code>` *Визначає частину комп'ютерного коду*.
+* `<code>&lt;del&gt;&lt;/del&gt;</code>` *Визначає текст, який було видалено з документа*.
+* `<code>&lt;dfn&gt;&lt;/dfn&gt;</code>` *Визначає термін, який буде визначено у вмісті*.
+* `<code>&lt;em&gt;&lt;/em&gt;</code>` *Визначає виділений текст*.
+* `<code>&lt;i&gt;&lt;/i&gt;</code>` *Визначає частину тексту іншим голосом або настроєм (курсив)*.
+* `<code>&lt;ins&gt;&lt;/ins&gt;</code>` *Визначає текст, який було вставлено в документ*.
+* `<code>&lt;kbd&gt;&lt;/kbd&gt;</code>` *Визначає введення з клавіатури*.
+* `<code>&lt;mark&gt;&lt;/mark&gt;</code>` *Визначає позначений/виділений текст*.
+* `<code>&lt;pre&gt;&lt;/pre&gt;</code>` *Визначає попередньо відформатований текст*.
+* `<code>&lt;q&gt;&lt;/q&gt;</code>` *Визначає коротку цитату*.
+* `<code>&lt;s&gt;&lt;/s&gt;</code>` *Визначає текст, який більше не є правильним*.
+* `<code>&lt;samp&gt;&lt;/samp&gt;</code>` *Визначає зразок виведення з комп’ютерної програми*.
+* `<code>&lt;small&gt;&lt;/small&gt;</code>` *Визначає менший текст*.
+* `<code>&lt;span&gt;&lt;/span&gt;</code>` *Визначає розділ у документі*.
+* `<code>&lt;strong&gt;&lt;/strong&gt;</code>` *Визначає важливий текст*.
+* `<code>&lt;sub&gt;&lt;/sub&gt;</code>` *Визначає підрядковий текст*.
+* `<code>&lt;sup&gt;&lt;/sup&gt;</code>` *Визначає надрядковий текст*.
+* `<code>&lt;u&gt;&lt;/u&gt;</code>` *Визначає підкреслений текст*.
+* `<code>&lt;var&gt;&lt;/var&gt;</code>` *Визначає змінну*.
 
 ### Форматування
 
