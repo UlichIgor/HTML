@@ -64,97 +64,97 @@
 ### ***Нові події, які з’явились в HTML5***
 ```html
 <!-- Скрипт викликається коли медіа дані готові почати відтворення -->
-<div onplay="скрипт">...</div>
+<div onplay="console.log('Media is playing')">...</div>
 
 <!-- Скрипт виконується тільки після як документ надрукований -->
-<div onafterprint="скрипт">...</div>
+<div onafterprint="alert('Document printed')">...</div>
 
 <!-- Скрипт виконується перед тим, як документ надрукований -->
-<div onbeforeprint="скрипт">...</div>
+<div onbeforeprint="alert('Document is about to print')">...</div>
 
 <!-- Скрипт виконується коли документ ось-ось буде вивантажений -->
-<div onbeforeunload="скрипт">...</div>
+<div onbeforeunload="return 'Are you sure you want to leave?'">...</div>
 
 <!-- Скрипт виконується коли там відбулися зміни до частини якоря в URL -->
-<div onhashchange="скрипт">...</div>
+<div onhashchange="console.log('Hash changed')">...</div>
 
 <!-- Викликається після того як завантаження елемента завершене -->
-<div onload="скрипт">...</div>
+<div onload="initPage()">...</div>
 
 <!-- Скрипт виконується коли викликане повідомлення -->
-<div onmessage="скрипт">...</div>
+<div onmessage="handleMessage(event)">...</div>
 
 <!-- Спрацьовує коли браузер починає працювати в автономному режимі -->
-<div onoffline="скрипт">...</div>
+<div onoffline="alert('You are offline')">...</div>
 
 <!-- Спрацьовує коли браузер починає працювати в режимі онлай -->
-<div ononline="скрипт">...</div>
+<div ononline="alert('You are online')">...</div>
 
 <!-- Скрипт виконується коли користувач переходить на іншу сторінку сторінку -->
-<div onpagehide="скрипт">...</div>
+<div onpagehide="console.log('Page hidden')">...</div>
 
 <!-- Скрипт виконується коли користувач заходить на сторінку -->
-<div onpageshow="скрипт">...</div>
+<div onpageshow="console.log('Page shown')">...</div>
 
 <!-- Скрипт виконується коли змінено історію одного вікна -->
-<div onpopstate="скрипт">...</div>
+<div onpopstate="handlePopState(event)">...</div>
 
 <!-- Скрипт виконується, коли розмір вікна браузера змінюється -->
-<div onresize="скрипт">...</div>
+<div onresize="console.log('Window resized')">...</div>
 
 <!-- Скрипт виконується, коли вміст Web Storage оновлюється -->
-<div onstorage="скрипт">...</div>
+<div onstorage="handleStorage(event)">...</div>
 
 <!-- Викликається, коли сторінка розвантажена, або вікно браузера було зачинено -->
-<div onunload="скрипт">...</div>
+<div onunload="cleanup()">...</div>
 
 <!-- Скрипт виконується, коли елемент втрачає фокус -->
-<div onblur="скрипт">...</div>
+<div onblur="console.log('Element lost focus')">...</div>
 
 <!-- Скрипт виконується коли викликається контекстне меню -->
-<div oncontextmenu="скрипт">...</div>
+<div oncontextmenu="showContextMenu(event)">...</div>
 
 <!-- Викликається в той момент, коли елемент отримує фокус -->
-<div onfocus="скрипт">...</div>
+<div onfocus="console.log('Element focused')">...</div>
 
 <!-- Скрипт викликається коли користувач вводить дані поле -->
-<div oninput="скрипт">...</div>
+<div oninput="validateInput(event)">...</div>
 
 <!-- Скрипт виконується, коли елемент недійсний -->
-<div oninvalid="скрипт">...</div>
+<div oninvalid="alert('Invalid input')">...</div>
 
 <!-- Викликається, коли натискається у формі кнопка типу Reset -->
-<div onreset="скрипт">...</div>
+<div onreset="resetForm()">...</div>
 
 <!-- Викликається, коли користувач щось пише в поле пошуку (для <input type="search">) -->
-<div onsearch="скрипт">...</div>
+<div onsearch="searchQuery(event)">...</div>
 
 <!-- Викликаєтсья після того як будь-який текст був обраний в елементі -->
-<div onselect="скрипт">...</div>
+<div onselect="console.log('Text selected')">...</div>
 
 <!-- Викликається при відправленні форми -->
-<div onsubmit="скрипт">...</div>
+<div onsubmit="submitForm(event)">...</div>
 
 <!-- Подія викликається, коли користувач затис (натиснув та не відпускає) клавішу -->
-<div onkeydown="скрипт">...</div>
+<div onkeydown="handleKeyDown(event)">...</div>
 
 <!-- Викликається коли корисрувач натиснув на клавішу -->
-<div onkeypress="скрипт">...</div>
+<div onkeypress="handleKeyPress(event)">...</div>
 
 <!-- Викликається коли користувач відпускає клавішу -->
-<div onkeyup="скрипт">...</div>
+<div onkeyup="handleKeyUp(event)">...</div>
 
 <!-- Виникає при подвійному клацанні ЛКМ на елементі -->
-<div ondblclick="скрипт">...</div>
+<div ondblclick="console.log('Element double-clicked')">...</div>
 
 <!-- Періодично викликається при операції перетягування -->
-<div ondrag="скрипт">...</div>
+<div ondrag="handleDrag(event)">...</div>
 
 <!-- Викликається коли користувач відпускає перелягуваний елемент -->
-<div ondragend="скрипт">...</div>
+<div ondragend="handleDragEnd(event)">...</div>
 
 <!-- Викликається, коли перетягуваний елемент входить в цільову зону -->
-<div ondragenter="скрипт">...</div>
+<div ondragenter="handleDragEnter(event)">...</div>
 
 <!-- Викликається, коли перетягуваний елемент виходить з цільової зони -->
-<div ondragleave="скрипт">...</div>
+<div ondragleave="handleDragLeave(event)">...</div>
