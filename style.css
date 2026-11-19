@@ -72,3 +72,4 @@ button:hover { background: #003d7a; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+\n.course-link { display: inline-block; margin-top: 1rem; padding: .7rem 1rem; border-radius: .5rem; background: #fff; color: #123d70; font-weight: 700; text-decoration: none; }\n.course-link:hover { background: #e8eef5; }\n
