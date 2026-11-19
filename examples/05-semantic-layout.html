@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приклад 5 — семантична структура</title>
+</head>
+<body>
+  <header>
+    <h1>Навчальний блог</h1>
+    <p>Приклад семантичної структури вебсторінки.</p>
+  </header>
+
+  <nav aria-label="Головна навігація">
+    <ul>
+      <li><a href="#article">Стаття</a></li>
+      <li><a href="#resources">Ресурси</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="article">
+      <header>
+        <h2>Навіщо потрібна семантика HTML?</h2>
+        <p>Опубліковано <time datetime="2026-11-20">20 листопада 2026 року</time>.</p>
+      </header>
+
+      <section>
+        <h3>Зрозуміла структура</h3>
+        <p>Семантичні елементи пояснюють призначення частин сторінки браузерам, допоміжним технологіям та розробникам.</p>
+      </section>
+
+      <section id="resources">
+        <h3>Корисні ресурси</h3>
+        <p><a href="https://developer.mozilla.org/uk/docs/Web/HTML">Посібник HTML на MDN</a>.</p>
+      </section>
+
+      <footer>
+        <p>Автор: Навчальний приклад</p>
+      </footer>
+    </article>
+
+    <aside>
+      <h2>Додаткова інформація</h2>
+      <p>Блок aside містить зміст, пов'язаний з основною статтею, але не є її головною частиною.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Навчальний блог</p>
+  </footer>
+</body>
+</html>
