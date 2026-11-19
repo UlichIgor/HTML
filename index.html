@@ -1,82 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приклад HTML5</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Навчальна демонстрація HTML: семантична структура, таблиці, форми та доступність.">
+  <title>Практика HTML — навчальний приклад</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Заголовок сайту</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про нас</a></li>
-            <li><a href="#contact">Контакти</a></li>
+  <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Навчальний приклад</p>
+      <h1>Вивчаємо HTML на практиці</h1>
+      <p>Основи семантичної розмітки, доступності та структури вебсторінки.</p>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Головна навігація">
+    <div class="container">
+      <ul>
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#about">Про HTML</a></li>
+        <li><a href="#table-example">Таблиця</a></li>
+        <li><a href="#contact">Форма</a></li>
+        <li><a href="tags.md">Довідник тегів</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main-content" class="container layout">
+    <article class="content">
+      <section id="home" aria-labelledby="home-title">
+        <h2 id="home-title">Що таке HTML?</h2>
+        <figure class="hero-figure">
+          <img src="assets/html5.png" alt="Логотип HTML5" width="400" height="400">
+          <figcaption>HTML задає структуру та зміст вебсторінки.</figcaption>
+        </figure>
+        <p>HTML — це мова розмітки, за допомогою якої браузер розуміє, де на сторінці заголовок, абзац, посилання, зображення, форма чи інший елемент.</p>
+        <details>
+          <summary>Показати простий приклад HTML</summary>
+          <pre><code>&lt;h1&gt;Привіт!&lt;/h1&gt;
+&lt;p&gt;Це мій перший абзац.&lt;/p&gt;</code></pre>
+          <p>Перший рядок створює заголовок першого рівня, другий — абзац.</p>
+        </details>
+      </section>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Семантичні елементи</h2>
+        <p>Семантичні елементи описують призначення частин сторінки. Наприклад, <code>&lt;nav&gt;</code> містить навігацію, а <code>&lt;main&gt;</code> — основний унікальний вміст.</p>
+        <ul class="feature-list">
+          <li><code>&lt;header&gt;</code> — вступна частина сторінки або розділу.</li>
+          <li><code>&lt;main&gt;</code> — основний вміст документа.</li>
+          <li><code>&lt;article&gt;</code> — самостійний матеріал.</li>
+          <li><code>&lt;footer&gt;</code> — нижня частина сторінки або розділу.</li>
         </ul>
-    </nav>
-    <figure>
-        <img src="./assets/html5.png" alt="html5 тег">
-        <figcaption>Використовується для вставки зображень і підписів до них.</figcaption>
-    </figure>
-    <main class="main">
-        <article>
-            <section id="home">
-                <h2>Головна</h2>
-                <p>Це основний розділ сайту.</p>
-                <details>
-                    <summary>Використовується для створення випадаючих розділів. Натисніть, щоб розгорнути</summary>
-                    <p class="poragraf">Тут знаходиться додаткова інформація.</p>
-                </details>
-            </section>
-            <section id="about">
-                <h2>Про нас</h2>
-                <p>Тут можна дізнатися більше про нашу компанію.</p>
-                <aside>
-                    <h3>Додаткова інформація</h3>
-                    <p>Використовується для створення таблиць.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Колонка 1</th>
-                                <th>Колонка 2</th>
-                                <th>Колонка 3</th>
-                                <th>Колонка 4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Дані 1</td>
-                                <td>Дані 2</td>
-                                <td>Дані 3</td>
-                                <td>Дані 4</td>
-                            </tr>
-                            <tr>
-                                <td>Дані 5</td>
-                                <td>Дані 6</td>
-                                <td>Дані 7</td>
-                                <td>Дані 8</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </aside>
-            </section>
-            <section id="contact">
-                <h2>Контакти</h2>
-                <p>Зв'яжіться з нами за допомогою форми нижче.</p>
-                <p><abbr title="International Organization for Standardization">ISO</abbr> є міжнародною організацією з розробки стандартів.</p>
-            </section>
-        </article>
-        <aside class="aside">
-            <h3>Додатковий контент</h3>
-            <p>Це додатковий бічний контент.</p>
-        </aside>
-    </main>
-    <footer class="footer">
-        <p>Наступне засідання відбудеться <time datetime="2025-04-10">10 квітня 2025 року</time>.</p>
-        <p>&copy; 2025 Ваш сайт. Всі права захищені.</p>
-    </footer>
+      </section>
+      <section id="table-example" aria-labelledby="table-title">
+        <h2 id="table-title">Приклад таблиці</h2>
+        <p>Таблиці використовують для представлення табличних даних, а не для побудови макета сторінки.</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Приклад розкладу навчання</caption>
+            <thead>
+              <tr><th scope="col">День</th><th scope="col">Тема</th><th scope="col">Тривалість</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Понеділок</th><td>Структура HTML</td><td>45 хв</td></tr>
+              <tr><th scope="row">Середа</th><td>Посилання та зображення</td><td>60 хв</td></tr>
+              <tr><th scope="row">П'ятниця</th><td>Форми та таблиці</td><td>60 хв</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Приклад контактної форми</h2>
+        <p>Ця форма демонструє HTML-поля та вбудовану перевірку браузера. Вона не надсилає дані на сервер.</p>
+        <form class="contact-form" action="#" method="get">
+          <div class="form-field">
+            <label for="name">Ваше ім'я</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Наприклад, Олена">
+          </div>
+          <div class="form-field">
+            <label for="email">Електронна пошта</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+          </div>
+          <div class="form-field">
+            <label for="topic">Тема повідомлення</label>
+            <select id="topic" name="topic">
+              <option value="question">Запитання</option>
+              <option value="feedback">Відгук</option>
+              <option value="other">Інше</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Напишіть ваше повідомлення..."></textarea>
+          </div>
+          <button type="submit">Перевірити та надіслати форму</button>
+        </form>
+      </section>
+    </article>
+    <aside class="sidebar" aria-labelledby="sidebar-title">
+      <h2 id="sidebar-title">Корисні посилання</h2>
+      <ul>
+        <li><a href="tags.md">Довідник HTML-тегів</a></li>
+        <li><a href="attributes.md">Довідник атрибутів</a></li>
+        <li><a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Документація MDN</a></li>
+        <li><a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">Перевірка HTML</a></li>
+      </ul>
+      <p class="note"><strong>Порада:</strong> натискайте Tab, щоб перевірити доступність елементів із клавіатури.</p>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Приклад створено для навчання HTML.</p>
+      <p><small>&copy; 2026 Навчальний довідник HTML.</small></p>
+    </div>
+  </footer>
 </body>
 </html>
