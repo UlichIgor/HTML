@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Безкоштовний інтерактивний курс HTML українською: уроки, тести, редактор коду та відстеження прогресу.">
+  <meta name="theme-color" content="#101827">
+  <title>HTML Академія — інтерактивний курс</title>
+  <link rel="stylesheet" href="course.css">
+  <script src="course.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson">Перейти до уроку</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="HTML Академія — головна">
+      <span class="brand-mark">H</span><span>HTML <b>Академія</b></span>
+    </a>
+    <div class="top-actions">
+      <span class="level-pill">Від початківця до практики</span>
+      <button class="button button-quiet" id="reset-progress" type="button" title="Очистити збережений прогрес">Скинути прогрес</button>
+    </div>
+  </header>
+
+  <section class="welcome">
+    <div class="welcome-copy">
+      <p class="eyebrow">БЕЗКОШТОВНИЙ ІНТЕРАКТИВНИЙ КУРС</p>
+      <h1>Створи свій перший сайт.<br><span>Крок за кроком.</span></h1>
+      <p class="welcome-text">Вивчай HTML на прикладах, виконуй завдання, перевіряй знання та одразу запускай власний код у браузері.</p>
+      <a class="button button-primary" href="#course-layout">Почати навчання <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="welcome-art" aria-hidden="true">
+      <div class="code-window">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <pre><span class="code-purple">&lt;html</span> <span class="code-blue">lang</span>=<span class="code-green">"uk"</span><span class="code-purple">&gt;</span>
+  <span class="code-purple">&lt;body&gt;</span>
+    <span class="code-purple">&lt;h1&gt;</span>
+      Привіт, світе!
+    <span class="code-purple">&lt;/h1&gt;</span>
+    <span class="code-purple">&lt;p&gt;</span>
+      Я вивчаю HTML.
+    <span class="code-purple">&lt;/p&gt;</span>
+  <span class="code-purple">&lt;/body&gt;</span>
+<span class="code-purple">&lt;/html&gt;</span></pre>
+        <div class="preview-chip"><span></span> Твоя сторінка оживає</div>
+      </div>
+    </div>
+  </section>
+
+  <main id="course-layout" class="course-layout">
+    <aside class="course-sidebar" aria-label="Навігація курсом">
+      <div class="progress-card">
+        <div class="progress-heading"><span>Твій прогрес</span><strong id="progress-percent">0%</strong></div>
+        <div class="progress-track" role="progressbar" aria-label="Загальний прогрес курсу" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+        <p id="progress-caption">Почни з першого уроку</p>
+      </div>
+      <div class="sidebar-label">ПРОГРАМА КУРСУ</div>
+      <nav id="lesson-nav" class="lesson-nav" aria-label="Уроки курсу"></nav>
+      <div class="sidebar-note"><span aria-hidden="true">💡</span><p><b>Порада:</b> не поспішай. Спробуй змінити приклади власноруч — так знання закріплюються краще.</p></div>
+    </aside>
+
+    <section id="lesson" class="lesson-panel" aria-live="polite">
+      <div class="lesson-toolbar">
+        <span id="lesson-kicker" class="eyebrow">МОДУЛЬ 01</span>
+        <span id="lesson-duration" class="duration">⏱ 10 хв</span>
+      </div>
+      <div id="lesson-content"></div>
+      <div class="lesson-navigation">
+        <button class="button button-secondary" id="previous-lesson" type="button">← Попередній урок</button>
+        <button class="button button-primary" id="next-lesson" type="button">Наступний урок →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand footer-brand" href="../index.html"><span class="brand-mark">H</span><span>HTML <b>Академія</b></span></a>
+      <p>Навчальний проєкт <a href="https://github.com/UlichIgor/HTML">UlichIgor / HTML</a>. Навчайся, експериментуй, створюй.</p>
+      <a href="https://developer.mozilla.org/uk/docs/Web/HTML">Документація MDN ↗</a>
+    </div>
+  </footer>
+
+  <dialog id="reset-dialog" class="confirm-dialog">
+    <form method="dialog">
+      <h2>Скинути прогрес?</h2>
+      <p>Усі позначки пройдених уроків і результати тестів на цьому пристрої буде видалено.</p>
+      <div class="dialog-actions">
+        <button class="button button-secondary" value="cancel">Залишити</button>
+        <button class="button button-danger" id="confirm-reset" value="confirm">Так, скинути</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
